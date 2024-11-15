@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 0.5em;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+}

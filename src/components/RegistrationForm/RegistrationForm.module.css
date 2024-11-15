@@ -1,0 +1,20 @@
+.form {
+  border: 0.1rem solid black;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  max-inline-size: 20rem;
+  padding: 1em;
+  margin-block-end: 1em;
+}
+
+.label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+}
+
+.btn {
+  cursor: pointer;
+}
