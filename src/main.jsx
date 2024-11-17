@@ -12,7 +12,7 @@ import { persistor, store } from "./redux/store.js";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true,  v7_relativeSplatPath: true }}>
         <Provider store={store}>
           <HelmetProvider>
             <App />

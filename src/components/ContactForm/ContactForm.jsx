@@ -54,7 +54,7 @@ const ContactForm = () => {
             <Field name="number"></Field>
             <ErrorMessage name="number" component="span" />
           </label>
-          <button type="submit">Add contact</button>
+          <button className={s.btn} type="submit">Add contact</button>
         </Form>
       </Formik>
     </>

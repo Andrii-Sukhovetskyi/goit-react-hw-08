@@ -1,20 +1,49 @@
 .form {
-  border: 0.1rem solid black;
-  border-radius: 0.2rem;
+  border: 1px solid black;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
-  max-inline-size: 20rem;
-  padding: 1em;
-  margin-block-end: 1em;
+  gap: 12px;
+  max-inline-size: 320px;
+  padding: 16px;
+  margin-block-end: 16px;
 }
 
 .label {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.2em;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .btn {
+  display: inline-block;
+  padding: 6px 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
 }

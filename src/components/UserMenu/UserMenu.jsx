@@ -12,7 +12,7 @@ const UserMenu = () => {
     <div className={s.container}>
       <p>Welcome, {user.name}</p>
       <button
-        className={s.button}
+        className={s.btn}
         type="button"
         onClick={() => dispatch(logout())}
       >
